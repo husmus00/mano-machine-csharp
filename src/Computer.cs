@@ -123,6 +123,7 @@ namespace ManoMachine
             PrintAddressSymbolTable();
             Console.WriteLine();
             PrintBinaryProgram();
+            Console.WriteLine();
         }
 
         public static void PrintAssemblyProgram()
@@ -133,7 +134,7 @@ namespace ManoMachine
             {
                 Console.WriteLine("Assembly program:");
                 assemblyProgram.Print();
-            }    
+            }
             else
             {
                 Logger.Log("Computer", "Failed to print assembly program to console, assembly program is empty");
@@ -142,14 +143,14 @@ namespace ManoMachine
         }
 
         public static void PrintAddressSymbolTable()
-        { 
+        {
             Logger.Log("Computer", "Attempting to print address symbol table");
 
             if (addressSymbolTable.Size() > 0)
             {
                 Console.WriteLine("Address Symbol Table:");
                 addressSymbolTable.Print();
-            }   
+            }
             else
             {
                 Logger.Log("Computer", "Failed to print address symbol table to console, assembly program is empty");
@@ -196,6 +197,13 @@ namespace ManoMachine
             binaryProgram.Clear();
         }
 
+        public static void AssembleFromGUI(string program)
+        {
+            string[] splitProgram = program.Split(Environment.NewLine);
+            assemblyProgram.Set(splitProgram);
+            Assemble();
+        }
+
         public static void Assemble()
         {
             if (assemblyProgram.Size() == 0)
@@ -231,8 +239,9 @@ namespace ManoMachine
 
                         Logger.Print("Computer", "Pass two of assembly ended successfully");
                         Logger.Log("Computer", "Pass two of assembly ended successfully");
+                        Console.WriteLine();
                     }
-                } 
+                }
             }
 
             // assemblyFailureFlag = false;
@@ -451,17 +460,14 @@ namespace ManoMachine
                 AR.Set(ReadFromMemory());
             }
             // else;
-                // "D7'I'T3: NOOP" // No operation
-                
+            // "D7'I'T3: NOOP" // No operation
+
             SC.Increment();
         }
 
         private static void ExecuteMRI(int opcode, int tick)
         {
-            // TODO:
-            /*switch (opcode) {
 
-            }*/
             if (opcode == 0)
                 ExecuteAND(tick);
             else if (opcode == 1)
@@ -712,7 +718,7 @@ namespace ManoMachine
             Logger.Print("Computer", "SNA");
             Logger.PrintAndLog("Computer", "D7I'T3rB3: if (AC(15) = 1) then (PC <- PC + 1), SC <- 0");
             // 0x8000 is (binary) 1000 0000 0000 0000. This will determine if the first bit is 1 or not
-            if ((AC.Word & 0x8000) == 0) 
+            if ((AC.Word & 0x8000) == 0)
                 PC.Increment();
         }
 
