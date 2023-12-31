@@ -6,7 +6,7 @@ I must make clear that I am not the designer or owner of the Mano Machine, all r
 
 A web app implementation of this project is available [here](https://github.com/husmus00/mano-web).
 
-Note: The main source code is in a seperate [repository](https://raw.githubusercontent.com/husmus00/mano-src) to be used as a submodule.
+Note: The main source code is in a seperate [repository](https://github.com/husmus00/mano-src) to be used as a submodule.
 
 # This Project
 I took a course on computer architecture in early 2020 and the reference book for our course was the one mentioned above. I was interested in playing around with the Mano Machine but I could not find a modern easy-to-use emulator which would just work without hassle. 
