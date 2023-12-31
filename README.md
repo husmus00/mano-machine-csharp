@@ -31,9 +31,9 @@ The program is designed with a console interface for ease of use, and since I en
 
 I've programmed it in the C# .NET Core ~3.1 framework~ (Updated to .NET Core 8.0 LTS) using Visual Studio. I've uploaded the .sln project file so you can open it in VS if you like, or you can just use the .cs files located in the "**src**" directory.
 
-A working executable for Windows is located in the "**Working Version**" directory. If you want to use this program on Mac or Linux, you can run it using the .NET Core framework which you can read about [here](https://docs.microsoft.com/en-us/dotnet/core/introduction) and download [here](https://dotnet.microsoft.com/download/dotnet-core) (Note that in this case you will only use the .cs files and not the rest of the VS project files).
+A working executable for Windows is available on the [releases](https://github.com/husmus00/mano-machine-csharp/releases) page. If you want to use this program on MacOS or Linux, you can run it using the .NET Core framework which you can read about [here](https://docs.microsoft.com/en-us/dotnet/core/introduction) and download [here](https://dotnet.microsoft.com/download/dotnet-core) (Note that in this case you will only use the .cs files and not the rest of the VS project files). Note that I have not tested this on Linux or MacOS.
 
-Example programs are located in the "**Example programs**" directory of the root directory, containing some programs that demonstrate how to write programs and to test how (and if) the machine works.
+Example programs are located in the "**examples**" directory, which demonstrate how to write programs and to test how (and if) the machine works.
 
 # License
 This project is licensed under the GNU general public license (GPLv3). If you simply intend to use this program then you shouldn't be concerned, but if you want to modify and/or distribute this project make sure to read the terms of the license [here](https://www.gnu.org/licenses/gpl-3.0.en.html) or read the license file included in the root directory.
