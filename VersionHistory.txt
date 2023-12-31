@@ -5,3 +5,4 @@ V 0.1.3 - 28/06/2020 : Added new commands to the console system and added a conf
 V 0.1.4 - 27/10/2020 : Made improvements to the assembler warning system, and cleaned up the logging process
 V 0.1.5 - 26/03/2021 : Modified load command and load function, eliminated assembler DEC and HEX operand bug and modified BinaryProgram class to include Empty function
 V 0.1.6 - 26/03/2021 : Modified ReadProgram to ignore .txt on console input and cleaned up BinaryProgram class's code.
+V 0.1.7 - 31/12/2023 : Modified project to integrate with the web app version
