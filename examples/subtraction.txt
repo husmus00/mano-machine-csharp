@@ -1,0 +1,16 @@
+     ORG 0    /Origin of program is location 0
+     LDA SUB  /Load subtrahend to AC
+     CMA      /Complement AC
+     INC      /Increment AC   
+     ADD MIN  /Add minuend to AC
+     STA DIF  /Store difference
+     HLT      /Halt computer
+MIN, DEC 83   /Decimal operand
+SUB, DEC -23  /Decimal operand
+DIF, HEX 0    /Sum stored in location C
+     END      /End of symbolic program
+
+/ Example program to demonstrate subtraction.
+/ Table 6-8 page 181 "Computer System Architecture" 3rd Ed. Morris M. Mano.
+/ This program will subtract the values at lines 8,9 (Labels MIN,SUB),
+/ and store the result at line 10 (Label DIF)
