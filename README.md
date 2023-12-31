@@ -1,6 +1,7 @@
-Note: The main source code is in a seperate [repository](https://raw.githubusercontent.com/husmus00/mano-src) as a submodule
----
 # The Mano Machine
+---
+Note: The main source code is in a seperate [repository](https://raw.githubusercontent.com/husmus00/mano-src) as a submodule
+
 The Mano Machine is a hypothetical RISC CPU designed by M. Morris Mano which appears in the 3rd edition of his book [Computer System Architecture](https://www.amazon.com/Computer-System-Architecture-Morris-Mano/dp/0131755633). Oddly enough, I couldn't find any reference to the 1st or 2nd editions of his book. You can read a bit more about the Mano Machine [here](https://wikipedia.org/wiki/Mano_machine).
 
 I must make clear that I am not the designer or owner of the Mano Machine, all rights go to M. Morris Mano and the original publishers of his book.
