@@ -1,12 +1,12 @@
 # The Mano Machine
----
-Note: The main source code is in a seperate [repository](https://raw.githubusercontent.com/husmus00/mano-src) as a submodule
 
 The Mano Machine is a hypothetical RISC CPU designed by M. Morris Mano which appears in the 3rd edition of his book [Computer System Architecture](https://www.amazon.com/Computer-System-Architecture-Morris-Mano/dp/0131755633). Oddly enough, I couldn't find any reference to the 1st or 2nd editions of his book. You can read a bit more about the Mano Machine [here](https://wikipedia.org/wiki/Mano_machine).
 
 I must make clear that I am not the designer or owner of the Mano Machine, all rights go to M. Morris Mano and the original publishers of his book.
 
 A web app implementation of this project is available [here](https://github.com/husmus00/mano-web).
+
+Note: The main source code is in a seperate [repository](https://raw.githubusercontent.com/husmus00/mano-src) to be used as a submodule.
 
 # This Project
 I took a course on computer architecture in early 2020 and the reference book for our course was the one mentioned above. I was interested in playing around with the Mano Machine but I could not find a modern easy-to-use emulator which would just work without hassle. 
