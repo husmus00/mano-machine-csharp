@@ -1,6 +1,53 @@
 Welcome to the instruction manual for this implementation of the Mano Machine!
+These instructions apply to both the desktop and web app. The web app offers some buttons for common commands.
 
 "CAS" refers to "Computer Systems Architecture" 3rd Edition by Morris M. Mano
+
+---------------------------------------------
+
+# The console:
+
+The console offers a convenient way to interface with the mano machine.
+* For the web app, the following commands can be entered under "Command Input".
+
+List of console commands:
+
+Note: Square brackets '[]' specify required arguments, parentheses '()' specify optional arguments, a pipe '|' means that both
+arguments are equivalent and either is accepted, and a comma ',' signifies alternative forms of the command.
+
+read:-
+	Description: Inputs the text file which contains the program. The file name is specified by FILE, without
+	the .txt extension (for example, 'read program' will input program.txt). After specifying the file name for the
+	first usage of 'read', the command can be used without an argument to reload the most recently loaded file. 
+	note that the name of the last file read will be stored regardless of whether the read operation succeeded.
+	Usage: read [FILE], read
+print:-
+	Description: Prints the inputted program, address table and assembly's binary output to the console, or 
+	prints the contents of the memory location specified by ADDRESS.
+	Usage: print, print memory [ADDRESS]
+log:-
+	Description: Prints the logs of the current session. Will print the 10 most recent entries by default, unless
+	the -f or --full flags are specified.
+	Usage: log (-f | --full)
+clear:- 
+	Description: Clears the inputted program, address table and assembly's binary output.
+	Usage: clear
+assemble:-
+	Description: assembles the inputted program into binary. Provides debug information if an error is encountered.
+	Usage: assemble
+load:-
+	Description: Loads the binary program into memory, with each instruction loaded into it's specified address
+	Usage: load
+run:-
+	Description: Runs the program from memory (program must be loaded with 'load' beforehand). Will begin from
+	memory location 0 by default, and an address can be specified to start running from. Debug mode can be 
+	activated with the -d or --debug flags.
+	Usage: run (ADDRESS) (-d | --debug)
+quit:-
+	Description: Quits the program.
+	Usage: quit
+
+---------------------------------------------
 
 # Writing programs:
 
@@ -63,49 +110,6 @@ The fourth line is the error message explaining why the error occured.
 - As mentioned above, you can load multiple programs into memory. For example, you can load a program with ORG 100 (and length of 8 instructions) and a program with ORG 108, and they will execute as one continous program
 - Note that in the above case, you will need to make sure that the program(s) earlier in memory do not contain a HLT instruction otherwise execution will halt before reaching the rest of the code
 - Memory state is continous accross executions and loads, meaning that results of execution can vary between runs depending on the contents of the program(s). Memory is reset by restarting the machine.
-
----------------------------------------------
-
-# The console:
-
-The console offers a convenient way to interface with the mano machine.
-
-List of console commands:
-
-Note: Square brackets '[]' specify required arguments, parentheses '()' specify optional arguments, a pipe '|' means that both
-arguments are equivalent and either is accepted, and a comma ',' signifies alternative forms of the command.
-
-read:-
-	Description: Inputs the text file which contains the program. The file name is specified by FILE, without
-	the .txt extension (for example, 'read program' will input program.txt). After specifying the file name for the
-	first usage of 'read', the command can be used without an argument to reload the most recently loaded file. 
-	note that the name of the last file read will be stored regardless of whether the read operation succeeded.
-	Usage: read [FILE], read
-print:-
-	Description: Prints the inputted program, address table and assembly's binary output to the console, or 
-	prints the contents of the memory location specified by ADDRESS.
-	Usage: print, print memory [ADDRESS]
-log:-
-	Description: Prints the logs of the current session. Will print the 10 most recent entries by default, unless
-	the -f or --full flags are specified.
-	Usage: log (-f | --full)
-clear:- 
-	Description: Clears the inputted program, address table and assembly's binary output.
-	Usage: clear
-assemble:-
-	Description: assembles the inputted program into binary. Provides debug information if an error is encountered.
-	Usage: assemble
-load:-
-	Description: Loads the binary program into memory, with each instruction loaded into it's specified address
-	Usage: load
-run:-
-	Description: Runs the program from memory (program must be loaded with 'load' beforehand). Will begin from
-	memory location 0 by default, and an address can be specified to start running from. Debug mode can be 
-	activated with the -d or --debug flags.
-	Usage: run (ADDRESS) (-d | --debug)
-quit:-
-	Description: Quits the program.
-	Usage: quit
 
 ---------------------------------------------
 	
