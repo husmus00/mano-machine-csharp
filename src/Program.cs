@@ -56,7 +56,7 @@ namespace ManoMachine
         static void Main(string[] args)
         {
             AppDomain.CurrentDomain.ProcessExit += new EventHandler(OnProcessExit);
-            Computer c = new Computer();
+            Computer c = new Computer(AppMode.Desktop);
         }
 
         static void OnProcessExit(object sender, EventArgs e)
