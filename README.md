@@ -11,7 +11,7 @@ Note: The main source code is in a seperate [repository](https://github.com/husm
 # This Project
 I took a course on computer architecture in early 2020 and the reference book for our course was the one mentioned above. I was interested in playing around with the Mano Machine but I could not find a modern easy-to-use emulator which would just work without hassle. 
 
-So, I created this project both as a personal experiment and in the hopes that someone out there might benefit from it. If that does ever happen, feel free to contact me via <husmus7g@protonmail.com> to submit any bug reports or if you would just like to chat.
+So, I created this project both as a personal experiment and in the hopes that someone out there might benefit from it. If that does ever happen, feel free to contact me via <hsm.link@proton.me> to submit any bug reports or if you would just like to chat.
 
 Note that I am *not* currently planning on adding any new (major) features to the project, only improving it in its current form.
 
