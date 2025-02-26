@@ -15,14 +15,14 @@ So, I created this project both as a personal experiment and in the hopes that s
 
 Note that I am *not* currently planning on adding any new (major) features to the project, only improving it in its current form.
 
-**This project is incomplete. Some things still need to be done, if I ever get around to doing them:**
-* The instructions and source code documentation need to be finalized.
+**Some things could be improved, if I ever get around to doing them:**
+* The instructions and source code documentation could be improved.
 * Ironing out all the bugs and cleaning the (somewhat messy) source code
 * Input and output functionality doesn't yet exist. I'm still debating how I should implement it.
-* Possibly adding more commands to the console for a little more ease-of-use, such as writing the binary output of the assembler to a file (although you can copy it from the console if you want)
+* Possibly adding more commands to the console for improved usability, such as writing the binary output of the assembler to a file (although you can copy it from the console if you want)
 * Improving the "debug" mode of program execution.
 
-The entire project was created from scratch although I did take some inspiration from Github user [Amitayh](https://github.com/amitayh) and [their python implementation of the Mano Machine](https://github.com/amitayh/mano-machine-emulator) (I was not satisfied with this implementation as it functions as a library rather than a working program, since there was no interface to use it in any way as of the time of this project's creation).
+The entire project was created from scratch although I did take some inspiration from Github user [Amitayh](https://github.com/amitayh) and [their python implementation of the Mano Machine](https://github.com/amitayh/mano-machine-emulator). I was not satisfied with this implementation as it functions as a library rather than a working program, since there was no interface to use it in any way as of the time of this project's creation.
 
 # The Program
 Instructions for using the program are in the **instructions.txt** file in the root of this project.
